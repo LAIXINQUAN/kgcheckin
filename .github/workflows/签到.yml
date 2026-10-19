@@ -2,7 +2,8 @@ name: 签到
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 16 * * *'
+    # 北京时间（东8区）凌晨 1:30 = UTC 17:30
+    - cron: '30 17 * * *'
 permissions:
   contents: read
   actions: write
